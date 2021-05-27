@@ -5,6 +5,7 @@ import geoJson from "../../data/custom.geo.json";
 // import CountryPopUp from "./CountryPopUp";
 // import geoJson from "../countries-land-10km.geo.json";
 
+
 // mapboxgl.accessToken = "MAPBOX_ACCESS_TOKEN";
 mapboxgl.accessToken =
   "pk.eyJ1IjoiY2FtcG9kZWdlbG8iLCJhIjoiY2s2b3lpdDJwMDkzaTNrcW8weno3ZzljciJ9.ggdQUJLnLnWQ92IjWlFK5g";
@@ -36,6 +37,7 @@ export default class Maps extends React.Component {
       style: "mapbox://styles/campodegelo/ck6tgsp387nkz1imw0h5okcha",
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom,
+      attributionControl: false,
     });
 
     // LOAD COORDINATES AND BORDER INFO FROM getJSON FILE
