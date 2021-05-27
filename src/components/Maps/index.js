@@ -128,8 +128,11 @@ export default class Maps extends React.Component {
   render() {
     return (
       <Fragment>
-        <div ref={(el) => (this.mapContainer = el)} className="map__container" />
-        {this.state.countryWasClicked && (
+        <div
+          ref={(el) => (this.mapContainer = el)}
+          className="map__container"
+        />
+        {/* {this.state.countryWasClicked && (
           <Fragment>
             name={this.state.name}
             countryISO3={this.state.countryISO3}
@@ -140,7 +143,7 @@ export default class Maps extends React.Component {
               })
             }
           </Fragment>
-        )}
+        )} */}
       </Fragment>
     );
   }

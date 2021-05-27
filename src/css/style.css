@@ -27,12 +27,12 @@ main {
 
 footer {
   width: 100%;
-  height: 5vh;
+  /* height: 5vh; */
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #D14545;
+  color: #d14545;
   background-color: #212529;
 }
 
@@ -44,6 +44,11 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.4s;
+}
+
+footer a:hover {
+  color: yellow;
 }
 
 a {
@@ -141,7 +146,7 @@ code {
 }
 
 .header {
-  padding: 1.5rem;
+  padding: 1.3rem;
   /* height: 10vh; */
 }
 
@@ -195,17 +200,20 @@ amplify-s3-image {
   top: 0;
 }
 
+#countries-layer {
+  transition: all 0.4s;
+}
+
 .nav-item a {
-  color: #D14545!important;
+  color: #d14545 !important;
 
-  transition: all .3s;
-
+  transition: all 0.4s;
 }
 
 .nav-item a:hover {
-  color: yellow!important;
+  color: yellow !important;
 }
 
 .mapboxgl-control-container {
-  display: none!important;
+  display: none !important;
 }
